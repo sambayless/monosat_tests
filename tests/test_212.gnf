@@ -1,0 +1,105 @@
+c monosat  monosat
+1 0
+-4 2 -3 0
+4 -2 0
+4 3 0
+4 0
+solve
+-6 2 3 0
+6 -2 0
+6 -3 0
+-7 -5 6 0
+7 5 0
+7 -6 0
+7 0
+5 0
+solve
+8 -2 -3 0
+-8 2 0
+-8 3 0
+-8 0
+solve
+solve 3
+solve -3
+digraph 0 0 1
+edge 1 0 1 9 1
+edge 1 1 2 10 1
+edge 1 0 2 11 1
+12 -9 -10 0
+-12 9 0
+-12 10 0
+13 -12 -11 0
+-13 12 0
+-13 11 0
+-13 0
+-14 9 11 0
+14 -9 0
+14 -11 0
+14 0
+-15 -4 9 0
+15 4 0
+15 -9 0
+15 0
+reach 1 0 2 16 8
+16 0
+solve
+reach 1 1 0 22 8
+-22 0
+reach 1 0 1 27 8
+-28 -3 -27 0
+28 3 0
+28 27 0
+28 0
+solve
+bv 0 4 29 30 31 32
+bv 1 4 33 34 35 36
+bv 2 4 37 38 39 40
+bv 3 4 41 42 43 44
+bv + 3 0 1
+bv const <= 45 3 7
+45 0
+bv 4 4 46 47 48 49
+bv + 4 0 2
+bv const >= -50 4 3
+-50 0
+bv const >= -51 0 2
+-51 0
+solve
+digraph 0 0 2
+edge_bv 2 0 1 52 0
+edge_bv 2 1 2 53 1
+edge_bv 2 0 2 54 2
+weighted_distance_leq 2 0 2 55 3
+55 0
+bv 5 4 56 57 58 59
+weighted_distance_bv_lt 2 0 2 60 5
+-60 0
+bv 6 4 61 62 63 64
+bv + 6 0 1
+bv <= 65 5 6
+bv >= 66 5 6
+67 -65 -66 0
+-67 65 0
+-67 66 0
+67 0
+solve
+maximum_flow_geq 2 0 2 68 3
+68 0
+bv 7 4 69 70 71 72
+maximum_flow_bv_geq 2 0 2 73 7
+73 0
+bv const 8 4 1
+bv 9 4 74 75 76 77
+bv + 9 7 8
+maximum_flow_bv_geq 2 0 2 78 9
+-79 -4 -78 0
+79 4 0
+79 78 0
+79 0
+solve
+bv const <= 80 7 4
+bv const >= -81 7 4
+82 -80 81 0
+-82 80 0
+-82 -81 0
+solve 82

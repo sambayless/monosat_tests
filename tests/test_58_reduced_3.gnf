@@ -1,0 +1,12 @@
+38 0
+digraph 66 0 2
+weighted_edge 2 48 49 17 1
+weighted_edge 2 49 50 18 1
+weighted_edge 2 50 51 19 1
+weighted_edge 2 51 52 20 1
+weighted_edge 2 52 53 21 1
+weighted_edge 2 53 54 22 1
+weighted_edge 2 54 55 23 1
+weighted_edge 2 64 48 36 8
+weighted_edge 2 55 65 37 8
+max_flow_gt 2 64 65 4 38

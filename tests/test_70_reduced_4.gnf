@@ -1,0 +1,4 @@
+digraph rational 123 15006 0
+weighted_edge 0 0 2 37763 0.0
+weighted_edge 0 2 0 37764 0.0
+weighted_distance_leq 0 0 1 52768 200

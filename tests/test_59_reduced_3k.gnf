@@ -1,0 +1,53 @@
+-21778 3547 0
+-21779 -3548 0
+-21779 21778 0
+21779 0
+digraph 66 0 2
+weighted_edge 2 0 1 3308 1
+weighted_edge 2 1 2 3310 1
+weighted_edge 2 2 3 3313 1
+weighted_edge 2 3 4 3316 1
+weighted_edge 2 4 5 3319 1
+weighted_edge 2 5 6 3322 1
+weighted_edge 2 6 7 3325 1
+weighted_edge 2 7 15 3327 1
+weighted_edge 2 8 9 3330 1
+weighted_edge 2 8 0 3331 1
+weighted_edge 2 9 10 3333 1
+weighted_edge 2 10 11 3337 1
+weighted_edge 2 11 12 3341 1
+weighted_edge 2 12 13 3345 1
+weighted_edge 2 13 14 3349 1
+weighted_edge 2 14 15 3353 1
+weighted_edge 2 40 41 3450 1
+weighted_edge 2 41 42 3453 1
+weighted_edge 2 42 43 3457 1
+weighted_edge 2 43 44 3461 1
+weighted_edge 2 44 45 3465 1
+weighted_edge 2 45 46 3469 1
+weighted_edge 2 46 47 3473 1
+weighted_edge 2 47 55 3476 1
+weighted_edge 2 48 49 3480 1
+weighted_edge 2 49 50 3483 1
+weighted_edge 2 50 51 3487 1
+weighted_edge 2 51 52 3491 1
+weighted_edge 2 52 53 3495 1
+weighted_edge 2 53 54 3499 1
+weighted_edge 2 54 55 3503 1
+weighted_edge 2 56 57 3509 1
+weighted_edge 2 57 58 3511 1
+weighted_edge 2 58 59 3514 1
+weighted_edge 2 59 60 3517 1
+weighted_edge 2 60 61 3520 1
+weighted_edge 2 61 62 3523 1
+weighted_edge 2 62 63 3526 1
+weighted_edge 2 64 8 3533 8
+weighted_edge 2 15 65 3534 8
+weighted_edge 2 64 40 3541 8
+weighted_edge 2 47 65 3542 8
+weighted_edge 2 64 48 3543 8
+weighted_edge 2 55 65 3544 8
+weighted_edge 2 64 56 3545 8
+weighted_edge 2 63 65 3546 8
+max_flow_gt 2 64 65 4 3547
+max_flow_gt 2 64 65 5 3548

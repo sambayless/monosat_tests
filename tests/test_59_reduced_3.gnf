@@ -1,0 +1,19 @@
+p cnf 0 0
+c graph constraints
+digraph 66 0 2
+weighted_edge 2 45 46 1 1
+weighted_edge 2 46 47 2 1
+weighted_edge 2 48 56 3 1
+weighted_edge 2 52 53 4 1
+weighted_edge 2 53 54 5 1
+weighted_edge 2 54 55 6 1
+weighted_edge 2 54 46 7 1
+weighted_edge 2 56 57 8 1
+weighted_edge 2 57 58 9 1
+weighted_edge 2 58 59 10 1
+weighted_edge 2 59 60 11 1
+weighted_edge 2 60 52 12 1
+weighted_edge 2 47 65 13 8
+weighted_edge 2 64 48 14 8
+weighted_edge 2 55 65 15 8
+max_flow_gt 2 64 65 5 3548

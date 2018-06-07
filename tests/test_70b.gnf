@@ -1,0 +1,4 @@
+digraph 1226 4795 0
+max_flow_gt 0 0 1225 35 569255
+digraph 1226 4760 1
+reach 1 34 1076 569272

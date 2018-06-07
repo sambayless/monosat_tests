@@ -1,0 +1,51 @@
+digraph 64 0 0
+weighted_edge 0 14 22 28 18
+weighted_edge 0 14 15 29 95
+weighted_edge 0 25 26 49 33
+weighted_edge 0 29 37 56 52
+weighted_edge 0 29 30 57 109
+weighted_edge 0 30 38 58 84
+weighted_edge 0 30 31 59 11
+weighted_edge 0 31 39 60 44
+weighted_edge 0 32 40 61 103
+weighted_edge 0 32 33 62 99
+weighted_edge 0 38 46 73 53
+weighted_edge 0 38 39 74 92
+weighted_edge 0 39 47 75 90
+weighted_edge 0 40 48 76 9
+weighted_edge 0 40 41 77 17
+weighted_edge 0 41 42 79 20
+weighted_edge 0 42 50 80 1
+weighted_edge 0 42 43 81 65
+weighted_edge 0 43 51 82 80
+weighted_edge 0 43 44 83 61
+weighted_edge 0 44 52 84 50
+weighted_edge 0 48 49 92 54
+weighted_edge 0 49 57 93 51
+weighted_edge 0 50 51 96 35
+weighted_edge 0 51 59 97 97
+weighted_edge 0 51 52 98 98
+weighted_edge 0 52 60 99 93
+weighted_edge 0 52 53 100 106
+weighted_edge 0 53 61 101 111
+weighted_edge 0 53 54 102 36
+weighted_edge 0 54 55 104 39
+weighted_edge 0 55 63 105 67
+weighted_edge 0 57 58 107 105
+weighted_edge 0 58 59 108 31
+weighted_edge 0 59 60 109 2
+weighted_edge 0 60 61 110 63
+weighted_edge 0 61 62 111 16
+weighted_edge 0 62 63 112 72
+mst_edge 0 100 438
+mst_edge 0 107 445
+digraph 64 224 1
+edge 1 25 26 163
+edge 1 36 37 184
+edge 1 37 45 185
+edge 1 37 38 186
+edge 1 38 46 187
+edge 1 38 39 188
+edge 1 40 48 190
+edge 1 41 49 192
+edge 1 42 43 195

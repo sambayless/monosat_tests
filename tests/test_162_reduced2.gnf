@@ -1,0 +1,8 @@
+fsm 0 7 0
+transition 0 0 0 1 0 2
+transition 0 0 0 2 0 3
+transition 0 0 0 6 0 7
+transition 0 9 9 6 0 601
+str 1 1 2 2 2 3 3 3 4 4 4 5 
+str 6 1 2 2 2 6 6 6 7 7 7 5 
+accepts 0 0 1 1 602

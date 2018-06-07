@@ -1,0 +1,23 @@
+23 0
+digraph 100 360 2
+edge 2 93 92 1
+edge 2 94 93 2
+edge 2 5 15 3
+edge 2 15 16 4
+edge 2 95 94 5
+edge 2 16 17 6
+edge 2 96 95 7
+edge 2 17 18 8
+edge 2 87 97 9
+edge 2 97 96 10
+edge 2 18 28 11
+edge 2 28 38 12
+edge 2 38 48 13
+edge 2 48 58 14
+edge 2 58 68 15
+edge 2 68 78 16
+edge 2 78 88 17
+edge 2 88 98 18
+edge 2 88 87 19
+edge 2 98 97 20
+reach 2 5 92 23

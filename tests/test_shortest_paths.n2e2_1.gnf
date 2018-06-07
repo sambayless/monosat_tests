@@ -1,0 +1,36 @@
+c Created with monosat_py
+p cnf 13 19
+-8 3 0
+-8 4 0
+8 -3 -4 0
+-9 5 0
+-9 8 0
+9 -5 -8 0
+-10 6 0
+-10 9 0
+10 -6 -9 0
+-11 -7 0
+-11 10 0
+11 7 -10 0
+-12 1 0
+-12 2 0
+12 -1 -2 0
+-13 -11 0
+-13 12 0
+13 11 -12 0
+13 0
+digraph 2 2 0
+edge 0 0 1 1
+edge 0 1 0 2
+reach 0 0 0 3
+distance_lt 0 0 0 4 1
+reach 0 0 1 5
+distance_lt 0 0 1 6 2
+distance_lt 0 0 1 7 1
+c var 4 distance_leq(0,0,0,0)
+c var 7 distance_leq(0,0,1,0)
+c var 6 distance_leq(0,0,1,1)
+c var 1 edge(0,0,1)
+c var 2 edge(0,1,0)
+c var 3 reaches(0,0,0)
+c var 5 reaches(0,0,1)

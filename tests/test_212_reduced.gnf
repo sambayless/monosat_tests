@@ -1,0 +1,11 @@
+bv 0 4 29 30 31 32
+bv 2 4 37 38 39 40
+bv 4 4 46 47 48 49
+bv + 4 0 2
+bv const >= -50 4 3
+digraph 0 0 2
+edge_bv 2 0 2 54 2
+weighted_distance_leq 2 0 2 55 3
+55 0
+bv 9 4 74 75 76 77
+maximum_flow_bv_geq 2 0 2 78 9

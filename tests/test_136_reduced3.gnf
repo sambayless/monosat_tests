@@ -1,0 +1,7 @@
+digraph 0 0 1
+bv const 214 8 5
+edge_bv 1 215 199 7955 214
+bv const 614 8 1
+edge_bv 1 199 222 8555 614
+edge_bv 1 222 233 8758 614
+maximum_flow_geq 1 215 233 8760 5

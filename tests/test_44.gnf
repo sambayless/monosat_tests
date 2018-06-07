@@ -1,0 +1,4 @@
+p cnf 0 0
+c graph constraints
+digraph 65 288 2
+distance_lt 2 0 64 1888 36

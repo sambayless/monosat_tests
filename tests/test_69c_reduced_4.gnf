@@ -1,0 +1,16 @@
+digraph 64 0 0
+weighted_edge 0 2 3 6 55
+weighted_edge 0 3 11 7 4
+weighted_edge 0 3 4 8 70
+weighted_edge 0 4 12 9 62
+weighted_edge 0 8 9 17 58
+weighted_edge 0 9 17 18 71
+weighted_edge 0 9 10 19 75
+weighted_edge 0 10 18 20 22
+weighted_edge 0 11 12 23 37
+weighted_edge 0 17 18 34 30
+mst_edge 0 8 346
+mst_edge 0 19 357
+digraph 64 224 1
+edge 1 0 1 116
+edge 1 1 9 117

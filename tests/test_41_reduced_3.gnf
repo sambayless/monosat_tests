@@ -1,0 +1,4 @@
+p cnf 0 0
+c graph constraints
+digraph 17 840 176
+edge 176 6 3 1

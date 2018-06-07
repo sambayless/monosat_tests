@@ -1,0 +1,26 @@
+-21775 3544 0
+-21776 21775 0
+-21777 21776 0
+-21778 21777 0
+-21779 21778 0
+21779 0
+digraph 66 0 2
+weighted_edge 2 48 56 3479 1
+weighted_edge 2 48 49 3480 1
+weighted_edge 2 49 50 3483 1
+weighted_edge 2 50 51 3487 1
+weighted_edge 2 51 52 3491 1
+weighted_edge 2 52 53 3495 1
+weighted_edge 2 53 54 3499 1
+weighted_edge 2 54 55 3503 1
+weighted_edge 2 56 57 3509 1
+weighted_edge 2 57 58 3511 1
+weighted_edge 2 58 59 3514 1
+weighted_edge 2 59 60 3517 1
+weighted_edge 2 60 61 3520 1
+weighted_edge 2 61 62 3523 1
+weighted_edge 2 62 63 3526 1
+weighted_edge 2 63 55 3529 1
+weighted_edge 2 64 48 3543 8
+weighted_edge 2 55 65 3544 8
+max_flow_gt 2 64 65 4 3547

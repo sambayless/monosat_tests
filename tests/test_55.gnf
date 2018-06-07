@@ -1,0 +1,5 @@
+p cnf 0 0
+c graph constraints
+digraph 65 288 1
+distance_lt 1 0 64 1474 36
+c var 2144 cliffDown(7,6)

@@ -1,0 +1,7 @@
+digraph 4 4 0
+edge_bv 0 2 3 20 3
+maximum_flow_bv_geq 0 1 3 45 5
+bv 3 4 13 14 15 16
+bv > 43 3   8
+bv 5 4 25 26 27 28
+bv 8 4 39 40 41 42

@@ -1,0 +1,30 @@
+bv const 0 4 7
+bv const 1 4 4
+bv const 2 4 8
+bv const 3 4 5
+bv const 4 4 2
+bv const 5 4 6
+bv const 6 4 0
+bv 7 4 3 4 5 6
+bv 8 4 10 11 12 13
+bv ite 14 1 6 8
+bv 9 4 17 18 19 20
+bv ite 21 2 6 9
+bv 10 4 24 25 26 27
+bv ite 28 3 6 10
+bv 11 4 31 32 33 34
+bv ite 35 4 6 11
+bv 12 4 38 39 40 41
+bv ite 42 5 6 12
+bv 13 4 45 46 47 48
+bv ite 49 6 6 13
+bv 14 4 52 53 54 55
+bv ite 56 3 6 14
+bv 15 4 59 60 61 62
+bv ite 63 0 6 15
+bv 16 4 66 67 68 69
+bv ite 70 1 6 16
+bv 107 4 702 703 704 705
+bv max 107 10 7 8 9 10 11 12 13 14 15 16
+bv 110 4 714 715 716 717
+bv <= 748 107 110

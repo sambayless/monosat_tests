@@ -1,0 +1,62 @@
+p cnf 55 8
+53 2 0
+49 -53 0
+-54 -1 0
+-48 54 0
+1 26 0
+-55 -2 0
+-4 55 0
+52 0
+c graph constraints
+digraph 256 23 0
+edge 0 8 24 3
+edge 0 8 9 4
+edge 0 248 249 5
+edge 0 9 25 6
+edge 0 25 26 7
+edge 0 249 248 8
+edge 0 26 42 9
+edge 0 42 43 10
+edge 0 186 202 11
+edge 0 202 218 12
+edge 0 218 234 13
+edge 0 234 250 14
+edge 0 250 249 15
+edge 0 43 59 16
+edge 0 59 75 17
+edge 0 75 91 18
+edge 0 91 107 19
+edge 0 107 123 20
+edge 0 123 139 21
+edge 0 139 155 22
+edge 0 155 171 23
+edge 0 171 187 24
+edge 0 187 186 25
+reach 0 8 248 26
+reach 0 8 249 27
+digraph 256 24 2
+edge 2 243 242 28
+edge 2 244 243 29
+edge 2 229 245 30
+edge 2 245 244 31
+edge 2 38 54 32
+edge 2 54 70 33
+edge 2 70 71 34
+edge 2 230 229 35
+edge 2 39 38 36
+edge 2 71 87 37
+edge 2 87 103 38
+edge 2 103 119 39
+edge 2 119 135 40
+edge 2 135 151 41
+edge 2 151 167 42
+edge 2 167 183 43
+edge 2 183 199 44
+edge 2 199 215 45
+edge 2 215 231 46
+edge 2 231 230 47
+edge 2 247 231 48
+edge 2 8 24 49
+edge 2 24 40 50
+edge 2 40 39 51
+reach 2 8 242 52

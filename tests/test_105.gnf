@@ -1,0 +1,3 @@
+digraph 3970 15746 0
+weighted_edge 0 3816 3969 1790215 1
+max_flow_gt 0 0 3969 122 1790985

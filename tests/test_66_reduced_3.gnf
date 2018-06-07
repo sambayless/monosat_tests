@@ -1,0 +1,37 @@
+point 0 4 2 100 100 
+point 0 7 2 50 100 
+point 0 8 2 100 50 
+point 0 9 2 57 13 
+point 0 10 2 88 25 
+point 0 11 2 58 31 
+point 0 12 2 28 92 
+point 0 13 2 58 73 
+point 0 14 2 28 25 
+point 0 15 2 43 85 
+point 0 16 2 73 7 
+point 0 17 2 3 79 
+point 0 18 2 40 76 
+point 0 19 2 51 16 
+point 0 20 2 18 13 
+point 0 21 2 7 35 
+point 0 22 2 92 98 
+point 8 250 2 19 63 
+point 9 253 2 0 0 
+convex_hull_collides_polygon 0 841 1 2  50 0
+convex_hull_collides_polygon 9 50441 1 2  40 76
+convex_hull_collides_polygon 9 50444 1 2  28 92
+convex_hull_collides_polygon 9 50445 1 2  40 76
+convex_hull_collides_polygon 9 50595 1 2  28 92
+convex_hull_collides_polygon 9 50596 1 2  51 16
+convex_hull_collides_polygon 9 50611 1 2  28 92
+convex_hull_collides_polygon 9 50612 1 2  51 16
+convex_hull_collides_polygon 9 50623 1 2  28 92
+convex_hull_collides_polygon 9 50624 1 2  51 16
+convex_hull_collides_polygon 9 50631 1 2  28 92
+convex_hull_collides_polygon 9 50632 1 2  51 16
+convex_hull_collides_polygon 9 50635 1 2  28 92
+convex_hull_collides_polygon 9 50636 1 2  51 16
+convex_hull_collides_polygon 9 50683 1 2  18 13
+convex_hull_collides_polygon 9 50714 1 2  28 92
+convex_hull_collides_polygon 9 50715 1 2  18 13
+convex_hull_collides_polygon 9 51148 1 2  28 92

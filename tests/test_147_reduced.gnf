@@ -1,0 +1,6 @@
+1 0
+bv 22533 11 125081 125083 125085 125087 125089 125091 125093 125095 125097 125099 125101
+c pseudoboolean constraints
+c end of pseudoboolean constraints
+minimize bv 22533
+solve

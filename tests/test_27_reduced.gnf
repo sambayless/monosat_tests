@@ -1,0 +1,4 @@
+p cnf 0 0
+c graph constraints
+digraph 256 730 0
+connect 0 17 255 1

@@ -1,0 +1,9 @@
+p cnf 3 2
+3 0
+-1 0
+c graph constraints
+digraph 65 252 1
+edge 1 6 7 1
+edge 1 7 8 2
+reach 1 0 7 3
+reach 1 0 8 4

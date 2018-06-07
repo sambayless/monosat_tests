@@ -1,0 +1,10 @@
+c monosat 
+1 0
+1 0
+digraph 0 0 1 4
+digraph 0 0 2 -1
+digraph 0 0 3 4
+digraph 0 0 4 -1
+digraph 0 0 5 4 MyGraph1
+digraph 0 0 6 -1 MyGraph2
+digraph 0 0 7 -1 ~`Name-with/"'//<>printable_\characters?!@#$%^&*()-+{}[]|1234567890

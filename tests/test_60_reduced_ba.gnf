@@ -1,0 +1,4 @@
+digraph 64 0 0
+weighted_edge 0 46 54 4 8
+weighted_edge 0 53 54 5 36
+mst_edge 0 5 440

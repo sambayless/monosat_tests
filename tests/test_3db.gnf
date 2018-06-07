@@ -1,0 +1,122 @@
+p cnf 187 81
+50 0
+-3 -77 0
+-5 -78 0
+77 -83 0
+78 -83 0
+-8 -95 0
+-93 -96 0
+-89 -97 0
+-98 97 0
+-10 -99 0
+-11 -100 0
+101 99 0
+-98 -101 0
+93 98 0
+-105 -104 0
+95 -107 0
+100 -108 0
+109 107 108 0
+93 -120 0
+98 -120 0
+105 -122 0
+-109 -122 0
+-126 -125 0
+120 122 127 0
+-126 -127 0
+83 -130 0
+107 -131 0
+108 -131 0
+132 130 131 0
+-129 -132 0
+126 129 0
+-86 -90 145 0
+-144 -145 0
+158 162 0
+-161 -162 0
+-187 0
+3 -67 0
+5 -68 0
+-69 68 0
+66 69 0
+67 68 75 0
+3 77 0
+76 -75 0
+-79 -76 0
+70 -66 79 0
+80 -70 0
+8 -85 0
+-86 85 0
+10 -88 0
+-90 88 0
+11 -89 0
+-102 -93 0
+89 97 0
+11 100 0
+-101 -100 0
+-97 101 0
+-102 -98 0
+96 -104 0
+-97 -106 0
+101 -106 0
+105 106 0
+-95 107 0
+-109 -107 0
+-99 -100 108 0
+-66 -111 0
+79 -111 0
+112 111 0
+102 -114 0
+104 -116 0
+106 -116 0
+115 114 116 0
+-112 -115 0
+-93 -98 0
+-105 122 0
+-122 -127 0
+126 125 0
+86 -145 0
+90 -145 0
+144 145 0
+-80 -147 0
+-144 147 0
+c graph constraints
+digraph 66 0 2
+weighted_edge 2 32 33 13 1
+weighted_edge 2 33 34 14 1
+weighted_edge 2 34 35 15 1
+weighted_edge 2 35 36 16 1
+weighted_edge 2 36 37 17 1
+weighted_edge 2 37 38 18 1
+weighted_edge 2 38 39 19 1
+weighted_edge 2 40 41 20 1
+weighted_edge 2 40 32 21 1
+weighted_edge 2 41 42 22 1
+weighted_edge 2 42 43 23 1
+weighted_edge 2 43 44 24 1
+weighted_edge 2 44 45 25 1
+weighted_edge 2 45 46 26 1
+weighted_edge 2 46 47 27 1
+weighted_edge 2 48 56 28 1
+weighted_edge 2 48 49 29 1
+weighted_edge 2 49 50 30 1
+weighted_edge 2 50 51 31 1
+weighted_edge 2 51 52 32 1
+weighted_edge 2 52 53 33 1
+weighted_edge 2 53 54 34 1
+weighted_edge 2 54 55 35 1
+weighted_edge 2 56 57 36 1
+weighted_edge 2 57 58 37 1
+weighted_edge 2 57 49 38 1
+weighted_edge 2 58 59 39 1
+weighted_edge 2 59 60 40 1
+weighted_edge 2 60 61 41 1
+weighted_edge 2 61 62 42 1
+weighted_edge 2 62 63 43 1
+weighted_edge 2 63 55 44 1
+weighted_edge 2 39 65 45 8
+weighted_edge 2 64 40 46 8
+weighted_edge 2 47 65 47 8
+weighted_edge 2 64 48 48 8
+weighted_edge 2 55 65 49 8
+max_flow_gt 2 64 65 4 50

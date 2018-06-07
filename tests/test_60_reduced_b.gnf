@@ -1,0 +1,5 @@
+p cnf 0 0
+c graph constraints
+digraph 3 0 0
+weighted_edge 0 1 2 1 106
+mst_edge 0 1 438

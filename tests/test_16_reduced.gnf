@@ -1,0 +1,5 @@
+p cnf 1 1
+1 0
+c graph constraints
+digraph 256 104 0
+reach 0 128 183 1

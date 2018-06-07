@@ -1,0 +1,5 @@
+fsm 0 1 1
+transition 0 10 11 0 34 1734
+fsm 8 1 1
+transition 8 0 0 1 0 71
+accepts_composition 0 8 0 11 1 0 -1 1742

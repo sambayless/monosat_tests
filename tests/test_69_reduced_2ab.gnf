@@ -1,0 +1,97 @@
+digraph 64 0 0
+weighted_edge 0 0 1 2 5
+weighted_edge 0 1 9 3 59
+weighted_edge 0 1 2 4 82
+weighted_edge 0 2 10 5 60
+weighted_edge 0 2 3 6 55
+weighted_edge 0 3 11 7 4
+weighted_edge 0 3 4 8 70
+weighted_edge 0 4 12 9 62
+weighted_edge 0 4 5 10 87
+weighted_edge 0 5 13 11 78
+weighted_edge 0 5 6 12 66
+weighted_edge 0 6 14 13 25
+weighted_edge 0 6 7 14 12
+weighted_edge 0 7 15 15 64
+weighted_edge 0 8 16 16 76
+weighted_edge 0 8 9 17 58
+weighted_edge 0 9 17 18 71
+weighted_edge 0 14 15 29 95
+weighted_edge 0 15 23 30 102
+weighted_edge 0 16 24 31 13
+weighted_edge 0 16 17 32 77
+weighted_edge 0 18 19 36 38
+weighted_edge 0 19 27 37 19
+weighted_edge 0 19 20 38 85
+weighted_edge 0 20 28 39 7
+weighted_edge 0 20 21 40 15
+weighted_edge 0 23 31 45 101
+weighted_edge 0 24 32 46 26
+weighted_edge 0 24 25 47 14
+weighted_edge 0 25 33 48 43
+weighted_edge 0 26 27 51 96
+weighted_edge 0 27 35 52 69
+weighted_edge 0 27 28 53 46
+weighted_edge 0 28 36 54 81
+weighted_edge 0 28 29 55 108
+weighted_edge 0 29 37 56 52
+weighted_edge 0 29 30 57 109
+weighted_edge 0 30 38 58 84
+weighted_edge 0 30 31 59 11
+weighted_edge 0 31 39 60 44
+weighted_edge 0 32 40 61 103
+weighted_edge 0 32 33 62 99
+weighted_edge 0 33 41 63 40
+weighted_edge 0 33 34 64 34
+weighted_edge 0 34 42 65 24
+weighted_edge 0 34 35 66 10
+weighted_edge 0 35 43 67 47
+weighted_edge 0 35 36 68 86
+weighted_edge 0 37 45 71 88
+weighted_edge 0 37 38 72 56
+weighted_edge 0 38 39 74 92
+weighted_edge 0 39 47 75 90
+weighted_edge 0 40 48 76 9
+weighted_edge 0 40 41 77 17
+weighted_edge 0 41 49 78 23
+weighted_edge 0 46 47 89 32
+weighted_edge 0 47 55 90 49
+weighted_edge 0 48 56 91 45
+weighted_edge 0 48 49 92 54
+weighted_edge 0 49 57 93 51
+weighted_edge 0 52 53 100 106
+weighted_edge 0 53 61 101 111
+weighted_edge 0 53 54 102 36
+weighted_edge 0 54 62 103 57
+weighted_edge 0 54 55 104 39
+weighted_edge 0 55 63 105 67
+weighted_edge 0 56 57 106 74
+weighted_edge 0 57 58 107 105
+weighted_edge 0 58 59 108 31
+weighted_edge 0 59 60 109 2
+weighted_edge 0 60 61 110 63
+weighted_edge 0 62 63 112 72
+mst_edge 0 55 393
+mst_edge 0 68 406
+mst_edge 0 106 444
+mst_edge 0 112 450
+digraph 64 224 1
+edge 1 0 1 116
+edge 1 1 9 117
+edge 1 1 2 118
+edge 1 2 10 119
+edge 1 31 39 174
+edge 1 33 41 177
+edge 1 33 34 178
+edge 1 34 42 179
+edge 1 34 35 180
+edge 1 35 43 181
+edge 1 35 36 182
+edge 1 36 37 184
+edge 1 37 45 185
+edge 1 37 38 186
+edge 1 38 46 187
+edge 1 38 39 188
+edge 1 40 48 190
+edge 1 41 49 192
+edge 1 42 43 195

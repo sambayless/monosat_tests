@@ -1,0 +1,4 @@
+point 2 119 2 35 115 
+point 2 120 2 55 -5 
+point 2 123 2 55 55 
+convex_hull_intersects_polygon 2 1158 2 2  50 50 50 50
