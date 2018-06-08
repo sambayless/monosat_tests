@@ -180,10 +180,10 @@ def compare(args):
 
                 except:
                     pass  # ignore
-
+                print(full_command)
                 print(
-                    "\nBad result on %s: found %d, expected %d.\nFull Command: %s"
-                    % (instance, result, expected, full_command)
+                    "\nBad result on %s: expected %d, found %d.\nFull Command: %s"
+                    % (instance, expected, result, full_command)
                 )
                 raise BadResultException()
                 # sys.exit(1)

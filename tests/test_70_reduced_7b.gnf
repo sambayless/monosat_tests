@@ -1,9 +1,0 @@
--142805 52767 0
--142806 142805 0
-142806 0
-point 0 2 2 -5 15 
-digraph rational 123 15006 0
-weighted_edge 0 0 1 37761 70.71067811865476
-weighted_edge 0 1 62 38125 0.0
-weighted_edge 0 62 1 38126 0.0
-reach 0 0 1 52767

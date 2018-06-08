@@ -1,7 +1,0 @@
-point 1 35 2 50 100 
-point 1 36 2 100 50 
-point 2 59 2 0 100 
-point 2 60 2 100 100 
-point 2 64 2 100 50 
-convex_hulls_intersect 1 2 290
-convex_hull_area_gt 2 75610 100
