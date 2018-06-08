@@ -93,7 +93,7 @@ with open(expected_filename, "a") as expectedfile:
                 else:
                     if result == 10 or result == 20 or result == 1:
                         writer.writerow([os.path.basename(file), str(result)])
-                        sys.stdout.flush()
+                        expectedfile.flush()
                     else:
                         print("Exit code %d when running %s" % (result, full_command), file=sys.stderr)
                         continue

@@ -820,3 +820,15 @@ test_shortest_paths.gnf,1
 test_shortest_paths.n5e20.gnf,1
 test_shortest_paths.n70e280.gnf,1
 theory_decide_becomes_unsat.gnf,10
+test_6_reduced_7.gnf,10
+test_138_reduced4.gnf,1
+test_167_reduced.gnf,10
+test_205_reduced2.gnf,10
+test_208_reduced5.gnf,10
+test_110.gnf,10
+test_164.gnf,10
+test_166.gnf,10
+test_167.gnf,10
+test_168.gnf,10
+test_169.gnf,10
+test_206.gnf,10

@@ -249,6 +249,7 @@ with open(args.expected) as expectedfile:
                 elapsed,
             )
         )
+        print("No bad results found.")
     except KeyboardInterrupt as e:
         elapsed = time.time() - start
         print(
