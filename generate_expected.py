@@ -42,6 +42,11 @@ timeout = args.timeout
 root = "tests/"
 
 existing = set()
+if not os.path.isfile(expected_filename):
+    f = open(expected_filename, "w")
+    f.write("# Instance, Expected Exit Code\n")
+    f.close()
+
 with open(expected_filename) as expectedfile:
     reader = csv.reader(expectedfile)
     rows = [row for row in reader if len(row) > 0 and not row[0].strip().startswith("#")]
