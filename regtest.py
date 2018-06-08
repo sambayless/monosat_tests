@@ -43,10 +43,9 @@ parser.add_argument(
 )
 parser.add_argument("--expected", type=str, help="Expected results to compare to", default="expected.csv")
 parser.add_argument("command", nargs=argparse.REMAINDER)
-# args, unknown_args = parser.parse_known_args()
+
 args = parser.parse_args()
 
-# command = " ".join(unknown_args)
 command = " ".join(args.command)
 if len(command) == 0:
     print("Usage: %s [-t TIMEOUT] [-p PARALLEL] [monosat_command]" % (sys.argv[0]))
@@ -192,7 +191,7 @@ def compare(args):
             with counter.get_lock():
                 # should really aquire locks on all the values below
                 print(
-                    "Runs {}={}+{} SAT+UNSAT + Crashes {} = BAD {} + TO {}+ MO {} + Unknown {}), in {:3.2f} s".format(
+                    "Runs {}={}+{} SAT+UNSAT + Crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} s".format(
                         counter.value,
                         num_sat.value,
                         num_unsat.value,
@@ -238,7 +237,7 @@ with open(args.expected) as expectedfile:
         pool.map(compare, enumerate(rows))
         elapsed = time.time() - start
         print(
-            "Finished. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + Unknown {}), in {:3.2f} s".format(
+            "Finished. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} s".format(
                 counter.value,
                 num_sat.value,
                 num_unsat.value,
@@ -253,7 +252,7 @@ with open(args.expected) as expectedfile:
     except KeyboardInterrupt as e:
         elapsed = time.time() - start
         print(
-            "Aborting. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + Unknown {}), in {:3.2f} s".format(
+            "Aborting. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} s".format(
                 counter.value,
                 num_sat.value,
                 num_unsat.value,
@@ -271,7 +270,7 @@ with open(args.expected) as expectedfile:
     except BadResultException as e:
         elapsed = time.time() - start
         print(
-            "Bad Result. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + Unknown {}), in {:3.2f} "
+            "Bad Result. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} "
             "s".format(
                 counter.value,
                 num_sat.value,

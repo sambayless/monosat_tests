@@ -5,6 +5,7 @@ Generate expected results for each GNF in the current directory; append those re
 Files will be tested in natural alphanumeric order, with files containing 'reduced' executed first.
 Only files without entries in 'existing.csv' will be tested.
 """
+import argparse
 import math
 import shlex
 import subprocess
@@ -20,15 +21,25 @@ def natural_sort_key(s, _nsre=re.compile("([0-9]+)")):
     return [int(text) if text.isdigit() else text.lower() for text in re.split(_nsre, s)]
 
 
-expected = "expected.csv"
+parser = argparse.ArgumentParser(usage="Generate expected results")
 
-cmd = " ".join(sys.argv[1:])
+parser.add_argument("-t", "--timeout", type=int, help="Time limit in seconds.", default=5)
+parser.add_argument("--expected", type=str, help="Expected results to compare to", default="expected.csv")
 
-root = "tests/"
+parser.add_argument("command", nargs=argparse.REMAINDER)
 
-if len(cmd) == 0:
-    print("Usage: %s [monosat_command]" % (sys.argv[0]))
+args = parser.parse_args()
+
+command = " ".join(args.command)
+if len(command) == 0:
+    print("Usage: %s [-t TIMEOUT] [monosat_command]" % (sys.argv[0]))
     sys.exit(1)
+
+
+expected = args.expected
+
+timeout = args.timeout
+root = "tests/"
 
 existing = set()
 with open(expected) as expectedfile:
@@ -54,16 +65,35 @@ with open(expected, "a") as expectedfile:
         for file in fileset:
             n += 1
             if file not in existing:
-                full_command = cmd + " " + root + file
+                full_command = command + " " + root + file
                 print("%d/%d: %s" % (n, total, full_command), file=sys.stderr)
                 start = time.time()
-                expected = subprocess.run(full_command, shell=True, stdout=sys.stderr, check=False).returncode
+                result = None
+                timedout = False
+                memdout = False
+                try:
+                    process = subprocess.run(
+                        shlex.split(full_command),
+                        # shell=True, # shell=true seems to break the timeout option
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.PIPE,
+                        check=False,
+                        timeout=timeout if timeout > 0 else None,
+                        start_new_session=True,
+                    )
+                    result = process.returncode
+                except subprocess.TimeoutExpired:
+                    # process timed out
+                    timedout = True
 
                 elapsed = time.time() - start
-                # round this up to seconds
-                if expected == 10 or expected == 20:
-                    writer.writerow([os.path.basename(file), str(expected)])  # , int(math.ceil(elapsed))
-                    sys.stdout.flush()
+                if timedout:
+                    # don't record anything
+                    print("Timed out when running %s" % (full_command), file=sys.stderr)
                 else:
-                    print("Exit code %d when running %s" % (expected, full_command), file=sys.stderr)
-                    continue
+                    if expected == 10 or expected == 20 or expected == 1:
+                        writer.writerow([os.path.basename(file), str(expected)])
+                        sys.stdout.flush()
+                    else:
+                        print("Exit code %d when running %s" % (expected, full_command), file=sys.stderr)
+                        continue
