@@ -36,13 +36,13 @@ if len(command) == 0:
     sys.exit(1)
 
 
-expected = args.expected
+expected_filename = args.expected
 
 timeout = args.timeout
 root = "tests/"
 
 existing = set()
-with open(expected) as expectedfile:
+with open(expected_filename) as expectedfile:
     reader = csv.reader(expectedfile)
     rows = [row for row in reader if len(row) > 0 and not row[0].strip().startswith("#")]
     for row in rows:
@@ -59,7 +59,7 @@ remaining_files_reduced = sorted(
 remaining_files = sorted([f for f in files if "reduced" not in f and not f.startswith("test_")], key=natural_sort_key)
 n = 0
 total = len(reduced_files) + len(original_files) + len(remaining_files_reduced) + len(remaining_files)
-with open(expected, "a") as expectedfile:
+with open(expected_filename, "a") as expectedfile:
     writer = csv.writer(expectedfile, quoting=csv.QUOTE_MINIMAL)
     for fileset in (reduced_files, original_files, remaining_files_reduced, remaining_files):
         for file in fileset:
@@ -91,9 +91,9 @@ with open(expected, "a") as expectedfile:
                     # don't record anything
                     print("Timed out when running %s" % (full_command), file=sys.stderr)
                 else:
-                    if expected == 10 or expected == 20 or expected == 1:
-                        writer.writerow([os.path.basename(file), str(expected)])
+                    if result == 10 or result == 20 or result == 1:
+                        writer.writerow([os.path.basename(file), str(result)])
                         sys.stdout.flush()
                     else:
-                        print("Exit code %d when running %s" % (expected, full_command), file=sys.stderr)
+                        print("Exit code %d when running %s" % (result, full_command), file=sys.stderr)
                         continue
