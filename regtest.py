@@ -191,7 +191,7 @@ def compare(args):
             with counter.get_lock():
                 # should really aquire locks on all the values below
                 print(
-                    "Runs {}={}+{} SAT+UNSAT + Crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} s".format(
+                    "Runs {}={}+{} SAT+UNSAT + Crashes {} = BAD {} + TO {}+ MO {} + Expected {}), in {:3.2f} s".format(
                         counter.value,
                         num_sat.value,
                         num_unsat.value,
@@ -237,7 +237,7 @@ with open(args.expected) as expectedfile:
         pool.map(compare, enumerate(rows))
         elapsed = time.time() - start
         print(
-            "Finished. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} s".format(
+            "Finished. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + Expected {}), in {:3.2f} s".format(
                 counter.value,
                 num_sat.value,
                 num_unsat.value,
@@ -253,7 +253,7 @@ with open(args.expected) as expectedfile:
     except KeyboardInterrupt as e:
         elapsed = time.time() - start
         print(
-            "Aborting. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} s".format(
+            "Aborting. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + Expected {}), in {:3.2f} s".format(
                 counter.value,
                 num_sat.value,
                 num_unsat.value,
@@ -271,7 +271,7 @@ with open(args.expected) as expectedfile:
     except BadResultException as e:
         elapsed = time.time() - start
         print(
-            "Bad Result. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + {}), in {:3.2f} "
+            "Bad Result. Runs {}={}+{} SAT+UNSAT, crashes {} = BAD {} + TO {}+ MO {} + Expected {}), in {:3.2f} "
             "s".format(
                 counter.value,
                 num_sat.value,
