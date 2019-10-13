@@ -41,6 +41,9 @@ parser.add_argument("-t", "--timeout", type=int, help="Time limit in seconds.", 
 parser.add_argument(
     "-p", "--parallel", type=int, help="Number of parallel jobs to run (default: -1=#cores)", default=-1
 )
+parser.add_argument("--output", help = "Optional file to write results to in CSV format", type=str, default=None)
+
+
 parser.add_argument("--expected", type=str, help="Expected results to compare to", default="expected.csv")
 parser.add_argument("command", nargs=argparse.REMAINDER)
 
@@ -67,6 +70,14 @@ timeout = args.timeout
 print("Time limit: %d, Parallel: %d" % (timeout, processes))
 print("Command: " + command)
 
+outputFile = None
+outputCsv = None
+if args.output is not None:
+    outputFile = open(args.output, "w")
+    outputCsv = csv.writer(outputFile)
+    print("Writing results to %s"%(args.output))
+    outputCsv.writerow(["Instance", "Status", "Result", "Time", "Command"])
+    outputFile.flush()
 
 class BadResultException(Exception):
     pass
@@ -110,6 +121,7 @@ def compare(args):
         result = None
         timedout = False
         memdout = False
+        status = "Fail"
         try:
             process = subprocess.run(
                 shlex.split(full_command),
@@ -121,11 +133,26 @@ def compare(args):
                 start_new_session=True,
             )
             result = process.returncode
+            status = "OK"
         except subprocess.TimeoutExpired:
             # process timed out
             timedout = True
 
+        if timedout:
+            status = "TIMEOUT"
+        elif memdout:
+            status = "MEMOUT"
+        elif (expected == 10 and result == 20) or (expected == 20 and result == 10):
+            status = "BAD"
+        elif result != 10 and result!= 20:
+            status = "CRASH"
+
         elapsed = time.time() - start
+
+        if outputCsv is not None:
+            with counter.get_lock():
+                outputCsv.writerow([instance, status, result, elapsed, full_command])
+                outputFile.flush()
 
         if timedout:
             with num_timeout.get_lock():
@@ -250,6 +277,9 @@ with open(args.expected) as expectedfile:
             )
         )
         print("No bad results found.")
+
+        if outputFile is not None:
+            outputFile.close()
     except KeyboardInterrupt as e:
         elapsed = time.time() - start
         print(
@@ -267,6 +297,10 @@ with open(args.expected) as expectedfile:
         )
         for p in multiprocessing.active_children():
             p.terminate()
+
+        if outputFile is not None:
+            outputFile.close()
+
         sys.exit(1)
     except BadResultException as e:
         elapsed = time.time() - start
@@ -286,4 +320,7 @@ with open(args.expected) as expectedfile:
         )
         for p in multiprocessing.active_children():
             p.terminate()
+        if outputFile is not None:
+            outputFile.close()
+
         sys.exit(1)
