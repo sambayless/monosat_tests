@@ -1,0 +1,9 @@
+p cnf 12 8
+1 0
+12 9 0
+digraph 3 11 0
+edge 0 2 2 9
+edge 0 2 1 12
+acyclic 0 1
+
+c Thanks to David Cook for this example
